@@ -1,0 +1,53 @@
+<!-- 4. Create a vertical box and add a fixed non scrolling background to it -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vw;
+            /* margin: 10px; */
+            margin: 0;
+            /* padding: 2px; */
+               background-color: #333;
+        }
+     .vertical-box{
+        width: 400px;
+        height: 300px;
+        background-image: url(pirates.jpg);
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-attachment:fixed;
+         padding: 20px;
+         overflow: auto;
+         color: #fff;
+         border: 2px solid;
+         margin: 30px;
+           border: 2px solid #ebe1e1;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+     }
+     h2 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+ <div class="vertical-box ">
+    <h2>vertical box</h2>
+    <!-- <p>this box is a fixed paragraph</p> -->
+     <p>This box has a fixed background image.<br>
+       Scroll this box and you will see the background image stays in place and does not scroll.</p>
+    <p style="margin-top:400px;">(Add vertical content to test scrolling)</p>
+ </div>   
+</body>
+</html>
